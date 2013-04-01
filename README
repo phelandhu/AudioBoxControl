@@ -1,0 +1,12 @@
+Ice Control
+this will control the ice mp3 feed to the IceCast server
+
+
+
+#things to do
+#need to copy the ices.conf file to /etc/ices.conf
+sudo cp /home/mbrowne/workspace/sandbox/iceControl/ices.conf /etc/ices.conf
+
+#make links to the scripts from their location to the binary folder
+sudo ln -s /home/mbrowne/workspace/sandbox/iceControl/bin/stopStream.sh /bin/stopStream
+sudo ln -s /home/mbrowne/workspace/sandbox/iceControl/bin/startStream.sh /bin/startStream
