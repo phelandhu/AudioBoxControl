@@ -15,7 +15,7 @@ $displayFunctions = new DisplayFunctions();
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html><head>
-<title>MyWebPlayer</title>
+<title>Audio Box Control</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.4; maximum-scale=1.4; user-scalable=1.4;" />
 <link rel="apple-touch-icon" href="icon.png">
@@ -23,6 +23,7 @@ $displayFunctions = new DisplayFunctions();
 	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<!--	<script src="index.functions.js"></script> -->
 <script type="text/javascript">
 	$(document).ready(function(){
 
@@ -77,7 +78,7 @@ $displayFunctions = new DisplayFunctions();
 
 	}
 
-	function ajaxUpdateUI(){ 
+	function ajaxUpdateUI() {
 		$("#update_user").show();
 		$.get("./ajax.php", {method : "updateUI"},
 			function(data){

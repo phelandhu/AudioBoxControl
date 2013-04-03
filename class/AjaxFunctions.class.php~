@@ -2,13 +2,17 @@
 class AjaxFunctions {
 	
 	private $logDir = "";
-	private	$cueFile = "";	
+	private	$cueFile = "";
+
+	
 	private $nonConverted = array(
 			'loadfile',
 			'loadlist',
 			'pause',
 			'quit'
 	);
+	
+
 	
 	public function __construct($binDir, $logDir) {
 		$this->logDir = $logDir;
