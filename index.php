@@ -8,7 +8,7 @@
 *
 * Mike Browne - phelandhu@gmail.com
 ***********************************************/
-include "conf/iceControl.conf";
+require_once "conf/iceControl.conf";
 include "class/DisplayFunctions.class.php";
 $submit='id=submit type=submit name="action"';
 $displayFunctions = new DisplayFunctions();
@@ -118,14 +118,12 @@ $displayFunctions = new DisplayFunctions();
 <br />
 <a href="#" id="streamStop">Stop the playlist</a>
 <br />
-
-<table border="0"  align="center">
-<tr><td>
-<?php 
-
+<?php
 $dirList=$displayFunctions->scanDirectories($rootDir);
 $mass=$displayFunctions->show_all_masks($dirList, $mask);
 ?>
+<table border="0"  align="center">
+<tr><td>
 <select id="fileSelection" name="file">
 <?php
 	echo $mass;
