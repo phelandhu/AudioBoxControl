@@ -114,7 +114,7 @@ $displayFunctions = new DisplayFunctions();
 <body>
 <input type="button" value="Start the playlist" id="streamStart">
 <br />
-<input type="button" value="Play new playlist" id="streamReStart">
+<input type="button" value="Re Start the playlist" id="streamReStart">
 <br />
 <input type="button" value="Stop the playlist" id="streamStop">
 <br />

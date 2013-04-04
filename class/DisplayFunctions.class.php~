@@ -32,7 +32,7 @@ class DisplayFunctions {
 			$fpoz = $clen + $poz;
 			if(strlen($mass)<= $clen + $poz) {
 				$filename = $this->get_filename($mass);
-				if(strlen($this->formatFilename($filename)) > 3) {
+				if(strlen($this->formatFilename($filename)) < 3) {
 					$strResult .= "<option value='" . $mass . "'>" . $this->formatFilename($filename) . "</option>\n";
 				}
 			}

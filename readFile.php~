@@ -47,7 +47,7 @@ $mp3 = "/x/music/queen/a_kind_of_magic/queen-a_kind_of_magic-01-one_vision.mp3";
 mp3Data($mp3);
 echo $data["path"] . "<br />";
 mp3Data("/x/music/paul_oakenfold/resident/paul_oakenfold-resident-(disc_1)-04-shine_(full_vocal).mp3");
-mp3Data("/x/music/queen/innuendo/queen-innuendo-02-i'm_going_slightly_mad.mp3");
+mp3Data($data["path"]);
 
 mp3Data($mp3);
 
